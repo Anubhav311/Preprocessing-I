@@ -1,1 +1,303 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+/* General */
+html,
+body {
+  height: 100%;
+  background-color: #D5D5D5;
+  font-family: Arial, "sans-serif";
+}
+/*  Header styling  */
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+@media ( max-width: 500px ) {
+  .container {
+    width: 400px;
+  }
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header nav {
+  background: #ae9c78;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  height: 40px;
+  color: #ae9c78;
+}
+header nav a {
+  text-decoration: none;
+  color: #333E50;
+}
+header .head-content {
+  display: flex;
+  align-items: center;
+  padding: 3% 5%;
+  background-color: #333E50;
+  justify-content: space-between;
+  color: #ae9c78;
+}
+header .head-content .img {
+  width: 200px;
+  height: 200px;
+}
+header .head-content .img img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #ae9c78;
+}
+header .head-content h1 {
+  font-size: 4rem;
+}
+@media ( max-width: 500px ) {
+  header .head-content {
+    flex-direction: column;
+  }
+}
+@media ( max-width: 500px ) {
+  header .head-content .name {
+    text-align: center;
+  }
+}
+/*  Main content styling  */
+.main-content {
+  display: flex;
+  width: 100%;
+  background: white;
+}
+@media ( max-width: 500px ) {
+  .main-content {
+    flex-direction: column-reverse;
+  }
+}
+.main-content-left {
+  width: 35%;
+  padding: 20px;
+  border-right: 2px solid #ae9c78;
+}
+@media ( max-width: 500px ) {
+  .main-content-left {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 0;
+    border-right: none;
+  }
+}
+.main-content-left .contact {
+  padding: 20px;
+  border-bottom: 2px solid #ae9c78;
+}
+.main-content-left .contact .cont-item {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+.main-content-left .contact .cont-item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5%;
+}
+.main-content-left .education {
+  padding: 20px;
+  border-bottom: 2px solid #ae9c78;
+}
+.main-content-left .education p {
+  margin: 10px 0;
+}
+.main-content-left .skills {
+  padding: 20px;
+}
+@media ( max-width: 500px ) {
+  .main-content-left .skills {
+    padding: 20px;
+    border-bottom: 2px solid #ae9c78;
+  }
+}
+.main-content-left h2 {
+  color: #ae9c78;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+.main-content-left p {
+  font-size: 0.9rem;
+}
+.main-content-right {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+@media ( max-width: 500px ) {
+  .main-content-right {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+.main-content-right .intro {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ae9c78;
+}
+.main-content-right .work-experience {
+  padding: 20px 0;
+}
+@media ( max-width: 500px ) {
+  .main-content-right .work-experience {
+    padding-bottom: 0;
+    padding: 20px;
+    border-bottom: 2px solid #ae9c78;
+    margin-bottom: 0;
+    padding: 20px 0;
+  }
+}
+.main-content-right h2 {
+  margin-bottom: 15px;
+  color: #ae9c78;
+  font-size: 1.2rem;
+}
+.main-content-right p {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+/*  footer styling  */
+footer {
+  width: 100%;
+  height: 30px;
+  background-color: #333E50;
+}
